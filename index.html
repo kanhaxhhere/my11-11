@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>For Anwesa 🌅 11:11</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Caveat:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--red:#e8284f;--pink:#ff7aa8;--ink:#561227;--glass:rgba(255,255,255,.24);--edge:rgba(255,255,255,.6);--r:26px}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{font-family:'Quicksand',system-ui,sans-serif;color:var(--ink);min-height:100vh;line-height:1.7;
+background:linear-gradient(175deg,#ffc2a0 0%,#ff8fa3 35%,#ff5d8f 70%,#c2185b 100%);background-attachment:fixed;overflow-x:hidden}
+body::before,body::after{content:"";position:fixed;border-radius:50%;filter:blur(70px);z-index:-1;opacity:.6}
+body::before{width:50vmax;height:50vmax;background:#ffe2b0;top:-20vmax;right:-15vmax}
+body::after{width:44vmax;height:44vmax;background:#ff3d6e;bottom:-18vmax;left:-14vmax}
+.glass{background:var(--glass);backdrop-filter:blur(18px) saturate(160%);-webkit-backdrop-filter:blur(18px) saturate(160%);border:1.5px solid var(--edge);border-radius:var(--r);box-shadow:0 10px 35px rgba(140,15,60,.22),inset 0 1px 0 rgba(255,255,255,.7)}
+h1,h2{font-family:'Caveat',cursive;font-weight:700;line-height:1.1}
+h2{font-size:clamp(2rem,7vw,3rem);text-align:center;margin-bottom:.4em;color:#fff;text-shadow:0 3px 16px rgba(140,15,60,.4)}
+section{max-width:860px;margin:0 auto;padding:64px 20px}
+.sub{text-align:center;color:#fff;opacity:.9;margin-bottom:28px}
+svg.cat{display:block}
+
+#gate{position:fixed;inset:0;z-index:50;display:grid;place-items:center;padding:20px;background:linear-gradient(175deg,#ffc2a0,#ff6f9c);transition:opacity .9s,visibility .9s}
+#gate.gone{opacity:0;visibility:hidden}
+#gate .glass{padding:34px 26px;text-align:center;max-width:360px;width:100%}
+#gate h1{font-size:2.5rem;color:#fff;text-shadow:0 3px 14px rgba(140,15,60,.4);margin:10px 0 4px}
+.btn{font:700 1rem 'Quicksand',sans-serif;color:#fff;background:linear-gradient(135deg,var(--pink),var(--red));border:1px solid rgba(255,255,255,.7);padding:13px 28px;border-radius:999px;cursor:pointer;box-shadow:0 8px 22px rgba(232,40,79,.45);transition:transform .2s}
+.btn:active{transform:scale(.95)}
+.btn:focus-visible,.flip:focus-visible,#catbtn:focus-visible{outline:3px solid #fff;outline-offset:3px}
+.bob{animation:bob 3s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px)}}
+
+#hero{min-height:100svh;display:grid;place-items:center;text-align:center}
+#hero .glass{padding:44px 24px;width:100%;overflow:hidden;position:relative}
+.sun{width:120px;height:120px;border-radius:50%;margin:0 auto 18px;background:radial-gradient(circle at 40% 35%,#fff6c9,#ffb347 55%,#ff5d6c);box-shadow:0 0 60px 20px rgba(255,170,90,.55);animation:glow 5s ease-in-out infinite}
+@keyframes glow{50%{box-shadow:0 0 90px 34px rgba(255,170,90,.7)}}
+.big{font-family:'Caveat',cursive;font-size:clamp(3.6rem,17vw,7rem);line-height:1;color:#fff;text-shadow:0 6px 30px rgba(140,15,60,.5)}
+.hello{font-size:1.1rem;margin-top:12px}
+.scroll{margin-top:20px;font-size:.9rem;opacity:.8}
+
+.letter{padding:30px 26px;font-size:1.05rem}
+.letter p{margin-bottom:14px;opacity:0;transform:translateY(8px);transition:.7s}
+.letter p.on{opacity:1;transform:none}
+.sign{font-family:'Caveat',cursive;font-size:1.9rem;text-align:right;color:#a3103d}
+
+.cats{padding:30px 20px;text-align:center}
+#catbtn{background:none;border:0;cursor:pointer;margin:0 auto;display:block}
+#catbtn svg{width:150px;height:auto;filter:drop-shadow(0 8px 14px rgba(140,15,60,.35));transition:transform .25s}
+#catbtn:active svg{transform:scale(.9) rotate(-5deg)}
+#bubble{min-height:3.4em;margin:14px auto 0;max-width:420px;padding:12px 18px;font-weight:700}
+.row{display:flex;justify-content:center;gap:14px;margin-top:20px;flex-wrap:wrap}
+.row svg{width:56px;height:auto}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px}
+.flip{perspective:900px;height:150px;background:none;border:0;cursor:pointer;font:inherit;color:inherit}
+.in{position:relative;width:100%;height:100%;transition:transform .7s;transform-style:preserve-3d}
+.flip.open .in{transform:rotateY(180deg)}
+.f,.b{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;display:grid;place-items:center;padding:14px;text-align:center;font-weight:700;font-size:.95rem}
+.f{font-size:2rem}
+.b{transform:rotateY(180deg)}
+
+.bn{padding:22px;text-align:center}
+.bn b{font-family:'Caveat',cursive;font-size:2rem;color:#a3103d;display:block}
+.wishes{display:grid;gap:12px}
+.wishes .glass{padding:16px 20px}
+
+#finale{text-align:center}
+#finale .glass{padding:40px 22px}
+#cd{font-family:'Caveat',cursive;font-size:2rem;color:#a3103d;margin-top:18px}
+.heart{position:fixed;pointer-events:none;z-index:60;animation:fall 3.4s ease-in forwards}
+@keyframes fall{from{transform:translateY(-10vh) rotate(0);opacity:1}to{transform:translateY(110vh) rotate(540deg);opacity:.9}}
+.float{position:fixed;bottom:-30px;z-index:-1;opacity:.55;animation:rise linear infinite;pointer-events:none}
+@keyframes rise{to{transform:translateY(-115vh) rotate(25deg)}}
+footer{text-align:center;padding:30px 20px 50px;color:#fff;opacity:.85;font-size:.9rem}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01s!important}}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="cat" viewBox="0 0 120 110">
+<path d="M18 48 L16 6 L48 28 Z M102 48 L104 6 L72 28 Z" fill="#ffd0d9" stroke="#e8284f" stroke-width="4" stroke-linejoin="round"/>
+<path d="M24 36 L23 17 L37 28 Z M96 36 L97 17 L83 28 Z" fill="#ff8fa8"/>
+<ellipse cx="60" cy="64" rx="50" ry="42" fill="#fff4f6" stroke="#e8284f" stroke-width="4"/>
+<ellipse cx="40" cy="62" rx="6.5" ry="9" fill="#561227"/><ellipse cx="80" cy="62" rx="6.5" ry="9" fill="#561227"/>
+<circle cx="42" cy="58" r="2.6" fill="#fff"/><circle cx="82" cy="58" r="2.6" fill="#fff"/>
+<ellipse cx="26" cy="78" rx="9" ry="5.5" fill="#ff9db5" opacity=".8"/><ellipse cx="94" cy="78" rx="9" ry="5.5" fill="#ff9db5" opacity=".8"/>
+<path d="M54 76 Q60 82 66 76 Z" fill="#e8284f"/>
+<path d="M60 82 Q54 92 46 88 M60 82 Q66 92 74 88" fill="none" stroke="#561227" stroke-width="3" stroke-linecap="round"/>
+<path d="M8 70 L28 74 M8 82 L28 80 M112 70 L92 74 M112 82 L92 80" stroke="#e8284f" stroke-width="2.6" stroke-linecap="round"/>
+</symbol>
+</svg>
+
+<div id="gate">
+  <div class="glass">
+    <svg class="cat bob" width="130" height="120" viewBox="0 0 120 110" style="margin:0 auto"><use href="#cat"/></svg>
+    <h1>Anwesa, hello! 🌅</h1>
+    <p style="margin-bottom:20px">A little kitty has a surprise<br>waiting just for you 💗</p>
+    <button class="btn" id="open">Open your surprise 🐾</button>
+  </div>
+</div>
+
+<section id="hero">
+  <div class="glass">
+    <div class="sun"></div>
+    <div class="big">11:11</div>
+    <p style="font-weight:700;margin-top:6px">✨ 11/11 · a moment I will always remember ✨</p>
+    <h2 style="margin-top:10px;font-size:clamp(2.2rem,9vw,3.4rem)">For Anwesa</h2>
+    <h2 style="margin-top:10px">Bhalo theko, always 🌸</h2>
+    <p class="hello">Every sunset you capture, every smile you share.<br>This little world is made only for you. 💗</p>
+    <p class="scroll">scroll down ↓</p>
+  </div>
+</section>
+
+<section>
+  <h2>A letter for you 💌</h2>
+  <div class="glass letter" id="letter">
+    <p>Dear Anwesa,</p>
+    <p>I wanted to make something that feels like you: warm like your sunsets, sweet like Bengal, and full of the kind of joy that makes everyone around you smile.</p>
+    <p>You have a way of looking at the sky and finding beauty where most people just walk past. I hope you know that you do the same with people. You make the ordinary feel special.</p>
+    <p>And that 11:11... every time I see it on a clock, I think of you. It feels like a little wish that came true. ✨</p>
+    <p>Thank you for being you, and for being in my life. Whatever comes next, I want to keep making you smile.</p>
+    <p class="sign">Always yours,<br>Anand 💗</p>
+  </div>
+</section>
+
+<section>
+  <h2>Meet your kitty corner 🐱</h2>
+  <p class="sub">tap the kitty, she has something to say</p>
+  <div class="glass cats">
+    <button id="catbtn" aria-label="Tap the kitty"><svg viewBox="0 0 120 110"><use href="#cat"/></svg></button>
+    <div class="glass" id="bubble">Meow? Tap me 🐾</div>
+    <div class="row"><svg viewBox="0 0 120 110"><use href="#cat"/></svg><svg viewBox="0 0 120 110"><use href="#cat"/></svg><svg viewBox="0 0 120 110"><use href="#cat"/></svg></div>
+  </div>
+</section>
+
+<section>
+  <h2>Little things I adore 🌅</h2>
+  <p class="sub">tap a card to flip it</p>
+  <div class="grid" id="reasons"></div>
+</section>
+
+<section>
+  <h2>Some sweet Bengali wishes 🪷</h2>
+  <div class="wishes">
+    <div class="glass bn"><b>Bhalo theko</b>Stay well, stay happy.</div>
+    <div class="glass bn"><b>Mishti hashi</b>May your sweet smile never fade.</div>
+    <div class="glass bn"><b>Shubho kamona</b>All my good wishes are with you.</div>
+    <div class="glass bn"><b>Ami tomar pashe achi</b>I am right here beside you.</div>
+  </div>
+</section>
+
+<section id="finale">
+  <h2>One last thing...</h2>
+  <div class="glass">
+    <svg class="cat bob" width="110" height="100" viewBox="0 0 120 110" style="margin:0 auto 12px"><use href="#cat"/></svg>
+    <p style="font-size:1.15rem;margin-bottom:20px"><b>You make my world brighter.</b><br>Thank you for being you, Anwesa.</p>
+    <button class="btn" id="love">Send some love 💗</button>
+    <div id="cd"></div>
+  </div>
+</section>
+<footer>Made with love at 11:11 · © Anand Rajput, All Rights Reserved</footer>
+
+<script>
+/* ====== EDIT ME: change these to your own real words ====== */
+const REASONS=[
+ ["🌇","The way you see sunsets and the sky is pure magic."],
+ ["🐱","Your love for kitties is the cutest thing ever."],
+ ["🍛","A plate of biryani makes you happiest, and I love that."],
+ ["🪷","Your Bengali sweetness feels like home."],
+ ["🌊","Vishakapatnam is your favourite, and I hope we go there someday."],
+ ["🎉","You celebrate every festival with no compromise."]
+];
+const MEOWS=["Meow! Anand thinks you're wonderful 🐾","Purrr... today is for you 💗","Meow meow! Go take a sunset photo 🌅","Mrrow! Biryani time? 🍛","Purr purr... you're my favourite human 🐱","Mishti hashi, always! 🪷"];
+const BIRTHDAY=new Date(2027,5,24); // 24 June
+/* ========================================================== */
+
+const $=s=>document.querySelector(s);
+const hearts=["💗","❤️","🌅","🐾","💕","🪷"];
+function rain(n){for(let i=0;i<n;i++){const h=document.createElement('div');h.className='heart';h.textContent=hearts[i%hearts.length];h.style.left=Math.random()*100+'vw';h.style.fontSize=(16+Math.random()*22)+'px';h.style.animationDelay=Math.random()*1.4+'s';document.body.appendChild(h);setTimeout(()=>h.remove(),5200)}}
+$('#open').onclick=()=>{$('#gate').classList.add('gone');rain(26)};
+
+const ps=[...document.querySelectorAll('#letter p')];
+const io=new IntersectionObserver(e=>{if(e[0].isIntersecting){ps.forEach((p,i)=>setTimeout(()=>p.classList.add('on'),i*900));io.disconnect()}},{threshold:.25});
+io.observe($('#letter'));
+
+let m=0;$('#catbtn').onclick=()=>{$('#bubble').textContent=MEOWS[m++%MEOWS.length]};
+
+const g=$('#reasons');
+REASONS.forEach(([e,t])=>{const b=document.createElement('button');b.className='flip';b.setAttribute('aria-label','Flip card');
+b.innerHTML=`<div class="in"><div class="f glass">${e}</div><div class="b glass">${t}</div></div>`;
+b.onclick=()=>b.classList.toggle('open');g.appendChild(b)});
+
+$('#love').onclick=()=>rain(46);
+const d=Math.ceil((BIRTHDAY-new Date())/864e5);
+$('#cd').textContent=d>0?`Only ${d} days until Anwesa's birthday (24 June) 🎂`:'Happy Birthday Anwesa! 🎂💗';
+
+for(let i=0;i<9;i++){const f=document.createElement('div');f.className='float';f.textContent=i%2?'🐱':'🌅';f.style.left=(i*11+Math.random()*6)+'vw';f.style.fontSize=(18+Math.random()*16)+'px';f.style.animationDuration=(16+Math.random()*14)+'s';f.style.animationDelay=(-Math.random()*20)+'s';document.body.appendChild(f)}
+</script>
+</body>
+</html>
